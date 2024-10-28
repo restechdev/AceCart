@@ -1,0 +1,82 @@
+{
+    "name" : "Backup and Restore",
+
+    "unique_identifier" : "backup_restore_system",
+
+    "version" : "3.0",
+
+    "minimum_item_version" : "8.0",
+
+    "addon_banner" : "backup_restore_banner.png",
+
+    "directory" :
+    [
+        {
+            "name" : [
+                        "resources/views/backend/backup"
+					]
+        }
+    ],
+
+    "sql_file"  : "",
+
+    "files"     :
+    [
+       {
+            "root_directory"    : "addons/backup_restore_system/routes/backup_restore.php",
+            "update_directory"  : "routes/backup_restore.php"
+        },
+       {
+            "root_directory"    : "addons/backup_restore_system/views/backups.blade.php",
+            "update_directory"  : "resources/views/backend/backup/backups.blade.php"
+        },
+       {
+            "root_directory"    : "addons/backup_restore_system/views/download_share.blade.php",
+            "update_directory"  : "resources/views/backend/backup/download_share.blade.php"
+        },
+       {
+            "root_directory"    : "addons/backup_restore_system/views/create_share_modal.blade.php",
+            "update_directory"  : "resources/views/backend/backup/create_share_modal.blade.php"
+        },
+       {
+            "root_directory"    : "addons/backup_restore_system/views/download_link.blade.php",
+            "update_directory"  : "resources/views/emails/download_link.blade.php"
+        },
+       {
+            "root_directory"    : "addons/backup_restore_system/views/execute_cronjob.blade.php",
+            "update_directory"  : "resources/views/backend/backup/execute_cronjob.blade.php"
+        },
+       {
+            "root_directory"    : "addons/backup_restore_system/views/incmenu.blade.php",
+            "update_directory"  : "resources/views/backend/backup/incmenu.blade.php"
+        },
+        {
+            "root_directory"    : "addons/backup_restore_system/controllers/BackupController.php",
+            "update_directory"  : "app/Http/Controllers/BackupController.php"
+        },
+         {
+            "root_directory"    : "addons/backup_restore_system/Utility/pclzip.php",
+            "update_directory"  : "app/Utility/pclzip.php"
+        },
+         {
+            "root_directory"    : "addons/backup_restore_system/Services/Backup.php",
+            "update_directory"  : "app/Services/Backup.php"
+        },
+         {
+            "root_directory"    : "addons/backup_restore_system/Services/Mysqldump.php",
+            "update_directory"  : "app/Services/Mysqldump.php"
+        },
+         {
+            "root_directory"    : "addons/backup_restore_system/assets/backup_restore_loading.gif",
+            "update_directory"  : "public/backup_restore_loading.gif"
+        },
+         {
+            "root_directory"    : "addons/backup_restore_system/assets/bg.jpg",
+            "update_directory"  : "public/assets/img/bg.jpg"
+        },
+        {
+            "root_directory"    : "addons/backup_restore_system/assets/backup_restore_banner.png",
+            "update_directory"  : "public/backup_restore_banner.png"
+        }
+    ]
+}
